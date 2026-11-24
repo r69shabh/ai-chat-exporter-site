@@ -8,10 +8,10 @@ No build step. To preview from the repository root, run `python3 -m http.server 
 
 ## Launch links
 
-All three placeholders are in the downloads section of `index.html`. Each link is disabled until its destination is available. To activate one, add its `href` and remove `aria-disabled` and `role`; update the launch note once the links are available.
+The Edge and Firefox placeholders are in the downloads section of `index.html`. To activate one, add its `href` and remove `aria-disabled` and `role`; update the launch note once the listings are available.
 
 | Link ID | Destination |
 | --- | --- |
 | `edge-addon` | Published Microsoft Edge Add-ons listing |
 | `firefox-addon` | Published Firefox Add-ons (AMO) listing |
-| `gumroad-pro` | Published Gumroad product URL (the extension’s `GUMROAD_PRODUCT_URL` is also empty until launch) |
+| `gumroad-pro` | [Live Gumroad product](https://rishabhgusain.gumroad.com/l/pvpkkq) |
