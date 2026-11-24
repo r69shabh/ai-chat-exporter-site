@@ -1,0 +1,48 @@
+:root {
+  color-scheme: light;
+  color: #182446;
+  background: #fff;
+  font: 16px/1.6 system-ui, sans-serif;
+  --blue: #163b89;
+  --muted: #4c5a70;
+  --pale: #edf2fa;
+  --line: #d7dfed;
+}
+*, *::before, *::after { box-sizing: border-box; }
+body { margin: 0; }
+.shell { width: min(1120px, 100% - 2.5rem); margin-inline: auto; }
+.masthead, .brand, nav, .actions, .site-footer { display: flex; align-items: center; gap: 1rem; flex-wrap: wrap; }
+.masthead, .site-footer { justify-content: space-between; padding-block: 1rem; }
+.brand { gap: .5rem; font-weight: 750; text-decoration: none; }
+a { color: var(--blue); text-underline-offset: .2em; }
+a:focus-visible, summary:focus-visible { outline: 3px solid #4069cf; outline-offset: 4px; }
+.hero, .plan-section { background: var(--pale); }
+.hero-grid { display: grid; grid-template-columns: 1fr 1.18fr; align-items: center; gap: clamp(1.5rem, 5vw, 4rem); padding-block: clamp(2.5rem, 7vw, 5.5rem); }
+.eyebrow { color: var(--blue); font-weight: 750; letter-spacing: .08em; text-transform: uppercase; font-size: .78rem; }
+h1, h2, h3 { line-height: 1.12; margin: 0 0 .65em; }
+h1 { font-size: clamp(2.4rem, 6vw, 4.6rem); letter-spacing: -.05em; }
+h2 { font-size: clamp(1.7rem, 4vw, 2.65rem); letter-spacing: -.03em; }
+h3 { font-size: 1.25rem; }
+.intro { font-size: 1.15rem; }
+.note, figcaption { color: var(--muted); font-size: .92rem; }
+.button { display: inline-block; border-radius: .5rem; padding: .65rem 1rem; background: var(--blue); color: #fff; font-weight: 700; text-decoration: none; }
+.button[href]:hover { background: #102c64; }
+.button[aria-disabled="true"] { background: var(--pale); color: var(--muted); border: 1px solid var(--line); }
+.capture { display: block; width: 100%; height: auto; border-radius: .8rem; box-shadow: 0 .8rem 2rem #18244624; }
+.section { padding-block: clamp(2rem, 6vw, 4rem); }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.cards article { border: 1px solid var(--line); border-radius: .75rem; padding: 1rem; }
+.cards p, details p { margin: .5rem 0 0; }
+figure { max-width: 720px; margin: 2rem auto 0; }
+figcaption { margin-top: .65rem; }
+table { width: 100%; border-collapse: collapse; background: white; text-align: left; }
+caption { text-align: left; margin-bottom: .65rem; }
+th, td { padding: .55rem .75rem; border: 1px solid var(--line); }
+thead { color: white; background: var(--blue); }
+details { padding: .9rem 0; border-bottom: 1px solid var(--line); }
+summary { cursor: pointer; font-weight: 650; }
+.site-footer { border-top: 1px solid var(--line); }
+@media (max-width: 720px) {
+  .hero-grid, .cards { grid-template-columns: 1fr; }
+  .masthead { gap: .6rem; }
+}
